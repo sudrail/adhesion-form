@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulletin d'Adhésion</title>
+</head>
+<body>
+    <h2>Bulletin d'Adhésion</h2>
+    <form action="send.php" method="post">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required><br><br>
+
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required><br><br>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="telephone">Téléphone :</label>
+        <input type="tel" id="telephone" name="telephone" required><br><br>
+
+        <label for="classe">Classe :</label>
+        <input type="text" id="classe" name="classe" required><br><br>
+
+        <label for="niveau">Niveau :</label>
+        <input type="text" id="niveau" name="niveau" required><br><br>
+
+        <label for="position">Position :</label>
+        <input type="text" id="position" name="position" required><br><br>
+
+        <label for="salaire">Salaire de base :</label>
+        <input type="text" id="salaire" name="salaire" required><br><br>
+
+        <label for="metier">Métier :</label>
+        <input type="text" id="metier" name="metier" required><br><br>
+
+        <label for="statut">Statut :</label>
+        <select id="statut" name="statut" required>
+            <option value="statutaire">Statutaire</option>
+            <option value="contractuel">Contractuel</option>
+            <option value="prive">Privé</option>
+        </select><br><br>
+
+        <label for="etablissement">Établissement / Entreprise :</label>
+        <input type="text" id="etablissement" name="etablissement" required><br><br>
+
+        <label for="adresse">Adresse personnelle :</label>
+        <input type="text" id="adresse" name="adresse" required><br><br>
+
+        <label for="message">Message :</label>
+        <textarea id="message" name="message"></textarea><br><br>
+
+        <input type="submit" value="Envoyer">
+    </form>
+    
+    <p><a href="Bulletin adhesion 2024.pdf" target="_blank">Télécharger le bulletin d'adhésion (PDF)</a></p>
+</body>
+</html>
