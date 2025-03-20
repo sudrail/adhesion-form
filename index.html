@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bulletin d'adhésion SUD Rail Bordeaux</title>
+    <title>Bulletin d'Adhésion</title>
 </head>
 <body>
-    <img src="./image001.png" alt="Logo SUD-Rail" style="width:200px; display:block; margin:auto;">
-    <h2>Bulletin d'Adhésion à SUD-Rail Région de Bordeaux</h2>
+    <img src="image001.png" alt="Logo SUD-Rail Bordeaux" style="width:200px; display:block; margin:auto;">
+    <h2>Bulletin d'adhésion SUD-Rail Région Bordeaux</h2>
     <form action="https://formspree.io/f/maneqgny" method="post" accept-charset="UTF-8">
         <input type="hidden" name="_subject" value="Nouvelle adhésion">
         <input type="hidden" name="_next" value="https://ton-site.com/merci.html">
@@ -54,19 +54,18 @@
         <label for="adresse">Adresse personnelle :</label>
         <input type="text" id="adresse" name="adresse" required><br><br>
 
-        <label for="iban">IBAN :</label>
-<input type="text" id="iban" name="iban" required 
-       pattern="[A-Z]{2}\d{2}[A-Z0-9]{4}\d{4}\d{4}\d{4}\d{4}\d{2}" 
-       placeholder="FR76 XXXX XXXX XXXX XXXX XXXX XXX" 
-       style="letter-spacing: 3px; width: 100%; max-width: 400px;">
+        <label for="message">Message :</label>
+        <textarea id="message" name="message"></textarea><br><br>
 
-<label for="bic">BIC :</label>
-<input type="text" id="bic" name="bic" required 
-       pattern="[A-Z]{6}[A-Z0-9]{2,5}" 
-       placeholder="XXXXXXXXXXX" 
-       style="letter-spacing: 3px; width: 100%; max-width: 200px;">
+        
+            <label for="iban">IBAN :</label>
+        <input type="text" id="iban" name="iban" required style="font-family:monospace; letter-spacing: 5px; width: 400px; text-transform: uppercase;"><br><br>
 
-        <input type="submit" value="Envoyer">
+        <label for="bic">BIC :</label>
+        <input type="text" id="bic" name="bic" required style="font-family:monospace; letter-spacing: 5px; width: 150px; text-transform: uppercase;"><br><br>
+
+        
+            <input type="submit" value="Envoyer" style="font-size: 18px; padding: 10px 20px;">
     </form>
     
     <p><a href="Bulletin adhesion 2024.pdf" target="_blank">Télécharger le bulletin d'adhésion (PDF)</a></p>
